@@ -2,6 +2,7 @@ function addNewElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("userInput").value;
     var text = document.createTextNode(inputValue);
+    li.className = "element"
     li.appendChild(text);
 
     if (inputValue == "") {
